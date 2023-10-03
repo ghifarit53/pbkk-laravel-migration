@@ -1,14 +1,14 @@
-# Laravel Form
+# Laravel Database
 
-Framework-based Programming (PBKK) class assignment
+Framework-based Programming (PBKK) Class Assignment  
+Laravel Migration
 
-Name: Muhammad Ghifari Taqiuddin  
-NRP: 5025211063
+**Group Members**
+- Eric Azka Nugroho (502521064)
+- Muhammad Ghifari Taqiuddin (5025211063)
 
 ### Screenshots
 
-<img width="1427" alt="Screenshot 2023-09-28 at 09 33 41" src="https://github.com/ghifarit53/laravel-form/assets/59758342/e9474d7e-7ed1-4b57-8aa7-fa6c9e4b049b">
+<img width="1427" alt="Screenshot 2023-10-04 at 01 42 10" src="https://github.com/ghifarit53/pbkk-laravel-migration/assets/59758342/a2dceeff-523a-4d63-a24c-c6e5d3b5574e">
 
-<img width="1427" alt="Screenshot 2023-09-28 at 09 33 37" src="https://github.com/ghifarit53/laravel-form/assets/59758342/9a565903-8ca0-4339-81dd-a5a2320e554f">
-
-<img width="1432" alt="Screenshot 2023-09-28 at 09 50 06" src="https://github.com/ghifarit53/laravel-form/assets/59758342/c9c9b4bb-e4bb-4ac8-b047-9a0bbc976054">
+<img width="1427" alt="Screenshot 2023-10-04 at 01 42 21" src="https://github.com/ghifarit53/pbkk-laravel-migration/assets/59758342/e4b64ad1-e05e-401e-a1f6-ebd082eb99c7">
