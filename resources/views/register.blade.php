@@ -8,46 +8,21 @@
         @csrf
 
         <div class="mb-4">
-            <label class="mr-4">Name</label>
-            @error('name')
+            <label class="mr-4">Username (2-15 characters)</label>
+            @error('username')
                 <span class="text-red-500">{{ $message }}</span>
             @enderror
 
-            <input type="text" name="name" class="px-2 py-1 bg-gray-100 rounded-md w-full" placeholder="e.g. Ghifari" value="{{ old('name') }}">
+            <input type="text" name="username" class="px-2 py-1 bg-gray-100 rounded-md w-full" placeholder="e.g. carthecat" value="{{ old('username') }}">
         </div>
 
         <div class="mb-4">
-            <label class="mr-4">Age</label>
-            @error('age')
+            <label class="mr-4">Name (2-64 characters)</label>
+            @error('fullname')
                 <span class="text-red-500">{{ $message }}</span>
             @enderror
 
-            <input type="number" name="age" step=1 class="px-2 py-1 bg-gray-100 rounded-md w-full" placeholder="e.g. 20" value="{{ old('age') }}">
-        </div>
-        
-        <div class="mb-4">
-            <label class="mr-4">Occupation</label>
-            @error('occupation')
-                <span class="text-red-500">{{ $message }}</span>
-            @enderror
-
-            <select name="occupation" class="px-2 py-1 bg-gray-100 rounded-md w-full" value="{{ old('occupation') }}">
-                <option value="Student">Student</option>
-                <option value="Entrepreneur">Entrepreneur</option>
-                <option value="Civil Servant">Civil Servant</option>
-                <option value="Lecturer">Lecturer</option>
-                <option value="Private Employee">Private Employee</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
-
-        <div class="mb-4">
-            <label class="mr-4">Weight (kg)</label>
-            @error('weight')
-                <span class="text-red-500">{{ $message }}</span>
-            @enderror
-
-            <input type="number" name="weight" step=0.01 class="px-2 py-1 bg-gray-100 rounded-md w-full" placeholder="e.g. 65.5" value="{{ old('weight') }}">
+            <input type="text" name="fullname" class="px-2 py-1 bg-gray-100 rounded-md w-full" placeholder="e.g. Car the Cat" value="{{ old('fullname') }}">
         </div>
 
         <div class="mb-4">
@@ -56,7 +31,7 @@
                 <span class="text-red-500">{{ $message }}</span>
             @enderror
 
-            <input type="text" name="email" step=0.01 class="px-2 py-1 bg-gray-100 rounded-md w-full" placeholder="e.g. ghifari@mail.com" value="{{ old('email') }}">
+            <input type="text" name="email" step=0.01 class="px-2 py-1 bg-gray-100 rounded-md w-full" placeholder="e.g. cat@mail.com" value="{{ old('email') }}">
         </div>
 
         <div class="mb-4">
@@ -68,7 +43,7 @@
             <input type="file" name="profile_img" class="py-1 w-full">
         </div>
 
-        <button type="submit" class="px-4 py-2 bg-green-600 text-white rounded-md">
+        <button type="submit" class="px-4 py-2 bg-orange-500 text-white rounded-md">
             Register
         </button>
     </form>

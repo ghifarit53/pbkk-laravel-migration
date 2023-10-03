@@ -15,10 +15,8 @@ class RegisterController extends Controller
 
     public function store(Request $request) {
         $validated = $request->validate([
-            "name" => "required|min:2|max:64",
-            "age" => "required|integer|between:1,120",
-            "occupation" => "required|min:2|max:64",
-            "weight" => "required|numeric|between:2.5,99.99",
+            "username" => "required|unique:users|min:2|max:16|alpha",
+            "fullname" => "required|min:2|max:64",
             "email" => "required|email|unique:users",
             "profile_img" => "required|mimes:jpg,jpeg,png|max:2048",
         ]);
@@ -29,6 +27,6 @@ class RegisterController extends Controller
 
         User::create($validated);
 
-        return redirect('/profile')->with('signupSuccess', "Registration success, please login to continue");
+        return redirect('/profile/' . $validated['username']);
     }
 }

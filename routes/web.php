@@ -30,4 +30,4 @@ Route::get('/login', function() {
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/profile/{user:id}', [ProfileController::class, 'index']);
+Route::get('/profile/{user:username}', [ProfileController::class, 'index']);
